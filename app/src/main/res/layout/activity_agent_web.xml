@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~
+  该布局container可以用来占有屏幕的某块区域来显示单一的对象，
+  可以包含有多个widgets或者是container，
+  但是所有被包含的widgets或者是container必须被固定到屏幕的左上角，
+  并且一层覆盖一层，不能通过为一个widgets或者是container指定一个位置。
+  图片说明可见 https://blog.csdn.net/rayln/article/details/39152801
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+
+</FrameLayout>

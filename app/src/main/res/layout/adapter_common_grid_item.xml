@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   布局使用 XUIAlphaLinearLayout
+   <RadiusImageView>    提供为图片添加圆角、边框、剪裁到圆形或其他形状等功能的ImageView.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    属性名	            类型	        默认值	         备注
+    iiv_icon	       reference	 /	        图标的资源
+    iiv_icon_scale	   float	    0.5f	    图标缩放的比例
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~
+  -->
+<com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.xuexiang.xui.widget.imageview.RadiusImageView
+            android:id="@+id/riv_item"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextStyle.Title"
+            android:layout_gravity="center"
+            android:textColor="@color/xui_config_color_white"
+            tools:text="菜" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_sub_title"
+        style="@style/TextStyle.Explain"
+        android:layout_marginTop="5dp"
+        tools:text="菜单1" />
+
+
+</com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>

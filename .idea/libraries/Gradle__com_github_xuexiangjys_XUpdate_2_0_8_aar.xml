@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.xuexiangjys:XUpdate:2.0.8@aar">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/gradle/lib/caches/transforms-2/files-2.1/419e5d574e2ae3b36edc13c13e78b429/jetified-XUpdate-2.0.8/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/plugins/gradle/lib/caches/transforms-2/files-2.1/419e5d574e2ae3b36edc13c13e78b429/jetified-XUpdate-2.0.8/res" />
+      <root url="file://$APPLICATION_HOME_DIR$/plugins/gradle/lib/caches/transforms-2/files-2.1/419e5d574e2ae3b36edc13c13e78b429/jetified-XUpdate-2.0.8/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/gradle/lib/caches/modules-2/files-2.1/com.github.xuexiangjys/XUpdate/2.0.8/99113091be936ad309254f72343ac1f15b348970/XUpdate-2.0.8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/gradle/lib/caches/modules-2/files-2.1/com.github.xuexiangjys/XUpdate/2.0.8/4957d7df0413b4c95a2f780cf12581fd9fbf3e4d/XUpdate-2.0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~
+  ~ 版权说明页（也就是业务说明 与需求报告对应）
+  ~ PullDownStyle
+        SmartRefreshLayout 是一个下拉刷新布局，它不只是支持所有的View，还支持多层嵌套的视图结构。
+        它继承自ViewGroup 而不是FrameLayout或LinearLayout，提高了性能。详细使用请参考 https://www.jianshu.com/p/29e315ff44a6
+  ~ XUIGroupListView
+        GroupListView支持上拉加载下拉刷新，并且可以根据需要选择是否启用下拉刷新、上拉加载、列表项悬停效果
+        详细使用请参考 https://feathersui.com/learn/haxe-openfl/group-list-view/
+        https://feathersui.com/learn/haxe-openfl/group-list-view/
+  ~  NestedScrollView
+        类似 ScrollView 但 NestedScrollView 支持 嵌套滑动，
+        无论是作为父控件还是子控件，嵌套滑动都支持，且默认开启
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/whitebg"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout style="@style/PullDownStyle">
+
+        <androidx.core.widget.NestedScrollView style="@style/ScrollViewStyle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                android:paddingBottom="25dp">
+
+                <!--   设置应用图标   -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:contentDescription="Logo"
+                    app:srcCompat="@drawable/plantlogo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/app_name"
+                    android:textColor="#021C19"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/xui_config_color_gray_3"
+                    android:textSize="16sp" />
+
+                <com.xuexiang.xui.widget.grouplist.XUIGroupListView
+                    android:id="@+id/about_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_copyright"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/xui_config_color_gray_7" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>
